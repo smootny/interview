@@ -1,4 +1,4 @@
-body {
+  body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -29,6 +29,16 @@ body {
     background-color: #555;
   }
 
+  pre {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
 
   section {
     padding: 20px;
@@ -37,7 +47,7 @@ body {
   }
 
   #javascript {
-    background-color: #f4f4f4;
+    background-color: #fdfde3;
   }
 
   #angular {
@@ -58,3 +68,4 @@ body {
       margin: 5px 0;
     }
   }
+  
