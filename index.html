@@ -31,28 +31,28 @@
           <li><strong>Typed Forms</strong>: Formularze z obsługą typów w TypeScript.</li>
         </ul>
         <p><strong>Przykład Standalone Components:</strong></p>
-        <pre><code>import { Component } from '@angular/core';
-
-@Component({
-  standalone: true,
-  selector: 'app-standalone',
-  template: `<h1>Standalone Component</h1>`
-})
-export class StandaloneComponent {}
-</code></pre>
+        <pre>
+          import { Component } from '@angular/core';
+          @Component({
+            standalone: true,
+            selector: 'app-standalone',
+            template: `Standalone Component`
+          })
+          export class StandaloneComponent {}
+        </pre>
         <p><strong>Przykład Signals:</strong></p>
-        <pre><code>import { signal } from '@angular/core';
+        <pre>
+          import { signal } from '@angular/core';
 
-// Tworzenie sygnału
-const counter = signal(0);
+          // Tworzenie sygnału
+          const counter = signal(0);
 
-// Subskrybowanie zmian
-counter.subscribe(value => console.log('Nowa wartość:', value));
+          // Subskrybowanie zmian
+          counter.subscribe(value => console.log('Nowa wartość:', value));
 
-// Aktualizacja wartości
-counter.set(counter() + 1); // Zwiększenie wartości o 1
-</code></pre>
-
+          // Aktualizacja wartości
+          counter.set(counter() + 1); // Zwiększenie wartości o 1
+        </pre>
         <h2>2. Jakie 3 rzeczy lubisz w Angularze, a jakie 3 rzeczy nie lubisz w Angularze?</h2>
         <p><strong>Lubię:</strong></p>
         <ul>
@@ -75,12 +75,13 @@ counter.set(counter() + 1); // Zwiększenie wartości o 1
           <li><strong>Ekosystem:</strong> Angular to „framework all-in-one,” Vue jest lżejszy.</li>
         </ul>
         <p><strong>Przykład:</strong></p>
-        <pre><code>// Angular Two-Way Binding
-<input [(ngModel)]="name" />
+        <pre>
+          // Angular Two-Way Binding
+          <input [(ngModel)]="name" />
 
-// Vue Two-Way Binding
-<input v-model="name" />
-</code></pre>
+          // Vue Two-Way Binding
+          <input v-model="name" />
+        </pre>
 
         <h2>4. Jakich 3–5 bibliotek użyłbyś w nowym projekcie Angularowym?</h2>
         <p><strong>Odpowiedź:</strong></p>
@@ -95,18 +96,19 @@ counter.set(counter() + 1); // Zwiększenie wartości o 1
         <h2>5. Czy wiesz, co to jest NgRx i RxJS?</h2>
         <p><strong>Odpowiedź:</strong></p>
         <p><strong>NgRx:</strong> Biblioteka zarządzania stanem, oparta na Redux.</p>
-        <pre><code>// Akcja
-export const increment = createAction('[Counter] Increment');
+        <pre>
+          // Akcja
+          export const increment = createAction('[Counter] Increment');
 
-// Reducer
-export const counterReducer = createReducer(0, on(increment, state => state + 1));
-</code></pre>
+          // Reducer
+          export const counterReducer = createReducer(0, on(increment, state => state + 1));
+        </pre>
         <p><strong>RxJS:</strong> Biblioteka do reaktywnego programowania opartego na Observable.</p>
-        <pre><code>import { interval } from 'rxjs';
+        <pre>
+          import { interval } from 'rxjs';
 
-interval(1000).subscribe(val => console.log(val));
-</code></pre>
-
+          interval(1000).subscribe(val => console.log(val));
+        </pre>
       </section>
   
       <section id="react">
@@ -115,4 +117,5 @@ interval(1000).subscribe(val => console.log(val));
       </section>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
